@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+  transition: all 0.1s;
+  text-shadow: 0 0 0.5px;
+}
+body {
+  background-color: #5e5e5e;
+  padding: 0%;
+  margin: 0%;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(5deg, #272727, #303030);
+}
+#container {
+  height: 90%;
+  width: 100%;
+  margin: auto;
+  padding: 0%;
+  max-width: 500px;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  background-color: aliceblue;
+  border-radius: 3%;
+  border-style: solid;
+  border-color: #000000;
+  margin-top: 5%;
+}
+#screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: rgb(109, 109, 109);
+  transition: all 0.25s;
+  height: fit-content;
+
+  margin-top: 5%;
+  margin-bottom: -20%;
+  background-color: aliceblue;
+  padding: 3%;
+  border-radius: 3%;
+}
+#buttons {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #c9c9c900;
+  margin: auto;
+  grid-template-areas:
+    "extbutt funcbutts"
+    "nums funcbutts"
+    "nums funcbutts";
+  border-top-left-radius: 6%;
+  border-top-right-radius: 6%;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#extra-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-area: extbutt;
+  align-items: center;
+}
+#extra-buttons button {
+  color: #14ddb8;
+}
+#extra-buttons button:hover {
+  background-color: #14ddb8b7;
+  color: aliceblue;
+}
+
+#nums-and-funcs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-area: nums;
+  align-items: center;
+}
+
+#function-buttons {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-area: funcbutts;
+  height: 100%;
+}
+#function-buttons button {
+  color: #eb6b6b;
+  margin: 5%;
+}
+#function-buttons button:hover {
+  background-color: #eb6b6bb7;
+  color: aliceblue;
+}
+footer {
+  width: 75%;
+  margin-top: 20%;
+  margin: auto;
+  color: #383838;
+}
+a {
+  padding: 1.25%;
+  border-radius: 4%;
+  background-color: #a0a0a04f;
+  color: #383838;
+  margin: auto;
+  transition: all 0.25s;
+  color: aliceblue;
+  background-color: #3838388a;
+}
+a:hover {
+  color: aliceblue;
+  background-color: #3838388a;
+  text-decoration: none;
+  transition: all 0.25s;
+  background-color: #a0a0a04f;
+  color: #383838;
+}
+
+button {
+  background-color: #e9e9e9b7;
+  border-radius: 20%;
+  width: auto;
+  height: 90%;
+  color: #383838;
+  font-weight: bold;
+  --button-hover: #a0a0a04f;
+  --focus: none;
+}
+button:over {
+  background-color: #616161;
+}
+h1 {
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+  transition: all 0.25s;
+  margin: 0;
+  padding: 0;
+}
