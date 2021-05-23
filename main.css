@@ -139,10 +139,11 @@ button {
   font-weight: bold;
   --button-hover: #a0a0a04f;
   --focus: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-button:over {
-  background-color: #616161;
-}
+
 h1 {
   color: rgb(56, 56, 56);
   font-weight: bold;
@@ -151,12 +152,7 @@ h1 {
   padding: 0;
 }
 #backspace,
-a {
-  line-height: 10%;
-}
+
 svg {
   display: flex;
-}
-svg:hover {
-  fill: #fff;
 }
