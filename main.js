@@ -70,13 +70,7 @@ if (
 
 //funcs
 
-function factorial(num) {
-  let sum = 1;
-  for (let i = num; i > 0; i--) {
-    sum *= i;
-  }
-  return sum;
-}
+
 function miniReset() {
 
   leftNumber = mainDisplay.innerText;
@@ -96,6 +90,16 @@ const clearButton = document.getElementById("clear");
 const backspaceButton = document.getElementById("backspace");
 const githubButton = document.getElementById("github");
 const githubLogo = document.getElementById("github-logo");
+const factorialButton = document.getElementById("factorial");
+
+function factorial(num) {
+  let sum = 1;
+  for (let i = num; i > 0; i--) {
+    sum *= i;
+  }
+  mainDisplay.innerText = sum;
+}
+
 digitButtons.forEach((button) =>
   button.addEventListener("click", () => {
     if (
@@ -139,4 +143,7 @@ githubButton.addEventListener(
 githubButton.addEventListener(
   "mouseleave",
   () => (githubLogo.style.fill = "#14ddb8")
+);
+factorialButton.addEventListener("click", () =>
+  factorial(mainDisplay.innerText)
 );
