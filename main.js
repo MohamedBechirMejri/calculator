@@ -94,6 +94,8 @@ const resultButton = document.getElementById("result");
 const mainDisplay = document.getElementById("main-display");
 const clearButton = document.getElementById("clear");
 const backspaceButton = document.getElementById("backspace");
+const githubButton = document.getElementById("github");
+const githubLogo = document.getElementById("github-logo");
 digitButtons.forEach((button) =>
   button.addEventListener("click", () => {
     if (
@@ -127,3 +129,14 @@ clearButton.addEventListener("click", () => {
 backspaceButton.addEventListener("click", () => {
   mainDisplay.innerText = mainDisplay.innerText.slice(0, -1);
 });
+githubButton.addEventListener("click", () =>
+  window.open("https://github.com/MohamedBechirMejri/", "_blank")
+);
+githubButton.addEventListener(
+  "mouseenter",
+  () => (githubLogo.style.fill = "#fff")
+);
+githubButton.addEventListener(
+  "mouseleave",
+  () => (githubLogo.style.fill = "#14ddb8")
+);
