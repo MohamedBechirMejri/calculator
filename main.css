@@ -6,14 +6,14 @@
   text-shadow: 0 0 0.5px;
 }
 body {
-  background-color: #5e5e5e;
+  background-color: rgb(51, 51, 51);
   padding: 0%;
   margin: 0%;
   margin: auto;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background: linear-gradient(5deg, #272727, #303030);
+  /*background: linear-gradient(5deg, #272727, #303030);*/
 }
 #container {
   height: 90%;
@@ -162,4 +162,27 @@ button {
   justify-content: center;
   align-items: center;
   font-size: large;
+}
+
+/* Dark Mode */
+#container {
+  background-color: rgb(51, 51, 51);
+  border-style: hidden;
+}
+#screen {
+  background-color: rgb(51, 51, 51);
+}
+#buttons {
+  background-color: rgb(51, 51, 51);
+}
+button {
+  background-color: rgb(83, 83, 83);
+  color: aliceblue;
+}
+h1 {
+  color: aliceblue;
+}
+button:hover {
+  background-color: #929695b7;
+  color: aliceblue;
 }
