@@ -2,7 +2,7 @@
 * {
   font-family: "Open Sans", sans-serif;
   font-size: large;
-  transition: all 0.5s;
+  transition: all 0.1s;
   text-shadow: 0 0 0.5px;
 }
 body {
@@ -110,6 +110,7 @@ footer {
   margin: auto;
   color: #383838;
 }
+/*
 a {
   padding: 1.25%;
   border-radius: 4%;
@@ -128,7 +129,7 @@ a:hover {
   background-color: #a0a0a04f;
   color: #383838;
 }
-
+*/
 button {
   background-color: rgb(237, 247, 255);
   border-radius: 20%;
@@ -149,6 +150,13 @@ h1 {
   margin: 0;
   padding: 0;
 }
-#backspace {
- line-height: 10%;
+#backspace,
+a {
+  line-height: 10%;
+}
+svg {
+  display: flex;
+}
+svg:hover {
+  fill: #fff;
 }
