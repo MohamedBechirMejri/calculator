@@ -78,7 +78,15 @@ const githubButton = document.getElementById("github");
 const githubLogo = document.getElementById("github-logo");
 const factorialButton = document.getElementById("factorial");
 const positiveNegativeButton = document.getElementById("positive-negative");
+
 const themeButton = document.getElementById("theme");
+
+const container = document.getElementById("container");
+const screen = document.getElementById("screen");
+const buttonsDiv = document.getElementById("buttons");
+const buttons = document.querySelectorAll("button");
+const h1 = document.querySelector("h1");
+const img = document.querySelector("img");
 
 function factorial(num) {
   let sum = 1;
@@ -151,4 +159,10 @@ themeButton.addEventListener("click", () => {
   } else {
     themeButton.innerHTML = `🌙`;
   }
+  container.classList.toggle("dark");
+  screen.classList.toggle("dark");
+  buttonsDiv.classList.toggle("dark");
+  h1.classList.toggle("dark");
+  img.classList.toggle("dark");
+  buttons.forEach((button) => button.classList.toggle("dark"));
 });
