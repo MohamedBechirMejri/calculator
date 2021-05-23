@@ -92,42 +92,38 @@ const digitButtons = document.querySelectorAll(".numbers");
 const funcButtons = document.querySelectorAll(".func");
 const resultButton = document.getElementById("result");
 const mainDisplay = document.getElementById("main-display");
-const secondaryDisplay = document.getElementById("secondary-display");
-
+const clearButton = document.getElementById("clear");
+const backspaceButton = document.getElementById("backspace");
 digitButtons.forEach((button) =>
   button.addEventListener("click", () => {
     if (
-      secondaryDisplay.innerText.charAt(
-        secondaryDisplay.innerText.length - 1
-      ) === "+" ||
-      secondaryDisplay.innerText.charAt(
-        secondaryDisplay.innerText.length - 1
-      ) === "-" ||
-      secondaryDisplay.innerText.charAt(
-        secondaryDisplay.innerText.length - 1
-      ) === "/" ||
-      secondaryDisplay.innerText.charAt(
-        secondaryDisplay.innerText.length - 1
-      ) === "*"
+      mainDisplay.innerText.charAt(mainDisplay.innerText.length - 1) === "+" ||
+      mainDisplay.innerText.charAt(mainDisplay.innerText.length - 1) === "-" ||
+      mainDisplay.innerText.charAt(mainDisplay.innerText.length - 1) === "/" ||
+      mainDisplay.innerText.charAt(mainDisplay.innerText.length - 1) === "*"
     ) {
-      secondaryDisplay.innerText += ` ${button.innerText} `;
+      mainDisplay.innerText += ` ${button.innerText} `;
     } else {
-      secondaryDisplay.innerText += button.innerText;
+      mainDisplay.innerText += button.innerText;
     }
   })
 );
 funcButtons.forEach((button) =>
   button.addEventListener("click", () => {
     if (mainDisplay.innerText === "") {
-      secondaryDisplay.innerText += ` ${button.innerText} `;
+      mainDisplay.innerText += ` ${button.innerText} `;
     } else {
-      secondaryDisplay.innerText = mainDisplay.innerText;
-      secondaryDisplay.innerText += ` ${button.innerText} `;
+      mainDisplay.innerText += ` ${button.innerText} `;
     }
   })
 );
 
 resultButton.addEventListener("click", () => {
-  mainDisplay.innerText = stringMath(secondaryDisplay.innerText);
-  secondaryDisplay.innerText = "";
+  mainDisplay.innerText = stringMath(mainDisplay.innerText);
+});
+clearButton.addEventListener("click", () => {
+  mainDisplay.innerText = "";
+});
+backspaceButton.addEventListener("click", () => {
+  mainDisplay.innerText = mainDisplay.innerText.slice(0, -1);
 });
