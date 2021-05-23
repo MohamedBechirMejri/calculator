@@ -21,14 +21,14 @@ body {
   margin: auto;
   padding: 0%;
   max-width: 500px;
-  display: grid;
-  justify-content: center;
-  margin: auto;
+  display: flex;
   background-color: aliceblue;
   border-radius: 3%;
   border-style: solid;
   border-color: #000000;
   margin-top: 5%;
+
+  flex-direction: column;
 }
 #screen {
   display: flex;
@@ -37,13 +37,13 @@ body {
   align-items: flex-end;
   color: rgb(109, 109, 109);
   transition: all 0.25s;
-  height: fit-content;
-
-  margin-top: 5%;
-  margin-bottom: -20%;
+ /* height: 15%;
+  width: 95%;*/
+  margin-top: 3%;
   background-color: aliceblue;
   padding: 3%;
   border-radius: 3%;
+  overflow:hidden;
 }
 #buttons {
   display: grid;
@@ -151,15 +151,11 @@ h1 {
   margin: 0;
   padding: 0;
 }
-#backspace,
 
-svg {
+#theme,
+button {
   display: flex;
-  width: 65%;
-}
-#theme {
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: larger;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
 }
