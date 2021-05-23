@@ -152,7 +152,14 @@ h1 {
   padding: 0;
 }
 #backspace,
+
 svg {
   display: flex;
   width: 65%;
+}
+#theme {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: larger;
 }
