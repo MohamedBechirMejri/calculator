@@ -64,24 +64,6 @@ if (
 // thanks to devrafalko for above code
 // his repo https://github.com/devrafalko/string-math
 
-/*
-//vars
-
-
-//funcs
-
-
-function miniReset() {
-
-  leftNumber = mainDisplay.innerText;
-  secondaryDisplay.innerText = leftNumber;
-
-}
-
-
-
-*/
-
 const digitButtons = document.querySelectorAll(".numbers");
 const funcButtons = document.querySelectorAll(".func");
 const resultButton = document.getElementById("result");
