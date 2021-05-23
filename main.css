@@ -152,7 +152,7 @@ h1 {
   padding: 0;
 }
 #backspace,
-
 svg {
   display: flex;
+  width: 65%;
 }
