@@ -20,7 +20,7 @@ body {
   width: 100%;
   margin: auto;
   padding: 0%;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   background-color: aliceblue;
   border-radius: 3%;
@@ -33,17 +33,18 @@ body {
 #screen {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
   color: rgb(109, 109, 109);
   transition: all 0.25s;
- /* height: 15%;
+  /* height: 15%;
   width: 95%;*/
   margin-top: 3%;
   background-color: aliceblue;
   padding: 3%;
   border-radius: 3%;
-  overflow:hidden;
+  /*  overflow:hidden;*/
+  text-align: end;
 }
 #buttons {
   display: grid;
@@ -60,6 +61,8 @@ body {
   height: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: 1%;
+  margin-right: 2%;
 }
 #extra-buttons {
   display: grid;
@@ -150,6 +153,7 @@ h1 {
   transition: all 0.25s;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 #theme,
